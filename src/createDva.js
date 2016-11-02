@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
-import createSagaMiddleware from 'redux-saga/lib/internal/middleware';
-import { takeEvery, takeLatest, throttle } from 'redux-saga/lib/internal/sagaHelpers';
+import createSagaMiddleware from 'redux-saga-ie8/lib/internal/middleware';
+import { takeEvery, takeLatest, throttle } from 'redux-saga-ie8/lib/internal/sagaHelpers';
 import handleActions from 'redux-actions/lib/handleActions';
-import * as sagaEffects from 'redux-saga/effects';
+import * as sagaEffects from 'redux-saga-ie8/effects';
 import isPlainObject from 'is-plain-object';
 import invariant from 'invariant';
 import warning from 'warning';
@@ -371,7 +371,7 @@ export default function createDva(createOpts) {
         const sub = subs[key];
         invariant(typeof sub === 'function', 'app.start: subscription should be function');
         sub({
-          dispatch: createDispatch(app._store.dispatch, model),
+          dispatch: createDispach(app._store.dispatch, model),
           history: app._history,
         }, onError);
       }
@@ -399,7 +399,7 @@ export default function createDva(createOpts) {
       return { ...sagaEffects, put };
     }
 
-    function createDispatch(dispatch, model) {
+    function createDispach(dispatch, model) {
       return action => {
         const { type } = action;
         invariant(type, 'dispatch: action should be a plain Object with type');

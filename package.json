@@ -4,9 +4,9 @@
   "description": "React and redux based, lightweight and elm-style framework.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvajs/dva"
+    "url": "https://github.com/codering/dva-ie8"
   },
-  "homepage": "https://github.com/dvajs/dva",
+  "homepage": "https://github.com/codering/dva-ie8",
   "typings": "./index.d.ts",
   "keywords": [
     "dva",
@@ -21,11 +21,11 @@
     "frontend"
   ],
   "authors": [
-    "chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)"
+    "codering <zcodeworld@gmail.com> (https://github.com/codering)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dvajs/dva/issues"
+    "url": "https://github.com/codering/dva-ie8/issues"
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha --no-timeouts",
@@ -58,12 +58,12 @@
     "react-router-redux": "^4.0.5",
     "redux": "^3.6.0",
     "redux-actions": "^0.12.0",
-    "redux-saga": "^0.12.0",
+    "redux-saga-ie8": "^0.11.0",
     "warning": "^3.0.0"
   },
   "peerDependencies": {
-    "react": "15.x",
-    "react-dom": "15.x"
+    "react": "0.14.x",
+    "react-dom": "0.14.x"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -87,8 +87,8 @@
     "jsdom": "^9.5.0",
     "mocha": "^3.0.2",
     "nyc": "^8.1.0",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
     "rimraf": "^2.5.4",
     "uglifyjs": "^2.4.10"
   },

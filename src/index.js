@@ -1,9 +1,7 @@
 import hashHistory from 'react-router/lib/hashHistory';
-import {
-  routerMiddleware,
-  syncHistoryWithStore,
-  routerReducer as routing
-} from 'react-router-redux';
+import syncHistoryWithStore  from 'react-router-redux/lib/sync'
+import {routerReducer as routing} from 'react-router-redux/lib/reducer'
+import routerMiddleware from 'react-router-redux/lib/middleware'
 import createDva from './createDva';
 
 export default createDva({
